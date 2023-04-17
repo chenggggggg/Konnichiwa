@@ -41,11 +41,21 @@
   }
 
   body {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       font-family: 'MPLUS1p-Regular', Arial, sans-serif;
-      background-color: #F8F6ED;
+      background-color: #fcf8f4;
       font-size: 16px;
       margin: 0;
       padding: 0;
+  }
+
+  header {
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
   }
 
   nav {
@@ -73,8 +83,28 @@
       transition: color 0.3s ease;
   }
 
+  nav ul li:first-child a img {
+      height: 150px;
+  }
+
   nav a:hover {
       color: #1C2331;
+  }
+
+  .nav-scrolled {
+      background-color: #fcf8f4;
+  }
+
+  .nav-scrolled a {
+      color: #1C2331;
+  }
+
+  .nav-scrolled img {
+      height: 75px;
+  }
+
+  .nav-scrolled ul li:first-child a img {
+      height: 75px;
   }
 
   main {
@@ -97,33 +127,86 @@
   }
 
   .background-container {
-    position: relative;
-    height: 40vh;
-    overflow: hidden;
+      position: relative;
+      height: 40vh;
+      overflow: hidden;
   }
-  
+
   .background-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    transform: translate3d(0, 0, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+      transform: translate3d(0, 0, 0);
   }
-  
+
   .background-container .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    max-width: 1000px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      max-width: 1000px;
   }
 
   /* Add this media query to apply parallax effect only on screens larger than 992px */
   @media (min-width: 992px) {
-    .background-container img {
-      transform: translate3d(0, -50%, 0);
-    }
+      .background-container img {
+          transform: translate3d(0, -50%, 0);
+      }
+  }
+
+  .menu {
+      background-image: url('../images/wave-of-kanagawa.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 18px;
+  }
+
+  .menu-item .dish-name {
+      min-width: 0;
+  }
+
+  .menu-item .price {
+      font-weight: bold;
+  }
+
+  .menu-item .dots {
+      flex: 1;
+      border-bottom: 2px dotted #1C2331;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .button {
+      display: inline-block;
+      background-color: #1C2331;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 3px;
+      transition: background-color 0.3s ease-in-out;
+  }
+
+  .button:hover {
+      background-color: #424E62;
+  }
+
+  footer {
+      background-color: #1C2331;
+  }
+
+  footer * {
+      color: #C0985D;
   }
