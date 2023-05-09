@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="fonts/MPLUS1p.css">
+    <link rel="stylesheet" href="./css/navbar.css">
 	<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
 </head>
@@ -21,22 +21,22 @@
 						<img src="./images/logo-white.png" alt="Logo" class="nav-logo">
 					</a>
 				</li>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Over ons</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Workshop</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#overons">Over ons</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#workshop">Workshop</a></li>
 				<li><a href="#">Cadeaubon</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">Webshop</a></li>
 			</ul>
 		</nav>
 	</header>
-	<div class="mb-5">
+	<div class="mb-5" id="home">
 		<iframe
 			src="https://www.youtube.com/embed/4XOSkRKLUBo?autoplay=1&loop=1&modestbranding=1&autohide=1&showinfo=0&mute=1&controls=0&playlist=4XOSkRKLUBo"
 			frameborder="0" allowfullscreen></iframe>
 	</div>
-	<div class="container mb-5">
+	<div class="container mb-5" id="overons">
 		<div class="row">
 			<div class="col-md-6">
 				<div class="row">
@@ -67,7 +67,7 @@
 		<img src="./images/konnichiwa-restaurant-inside-teppanyaki.jpg" alt="Konnichiwa teppanyaki" class="img-fluid">
 	</div>
 
-	<div class="container-fluid py-5 menu">
+	<div class="container-fluid py-5 menu" id="menu">
 		<h2 class="text-center">Menu</h2>
 		<p class="text-center">Bekijk de selectie van onze meest geliefde en kenmerkende gerechten</p>
 		<div class="row">
@@ -235,7 +235,7 @@
 		</div>
 		<div class="row justify-content-center py-3">
 			<div class="col-md-3 text-center">
-				<a class="button" href="#">
+				<a class="button" href="menu.html">
 					BEKIJK VOLLEDIGE MENU
 					</br>
 					<p class="japanese-text">全メニューを見る</p>
@@ -249,7 +249,7 @@
 			class="img-fluid">
 	</div>
 
-	<div class="container my-5">
+	<div class="container my-5" id="workshop">
 		<div class="row justify-content-center ">
 			<div class="col.md-6">
 				<h3>Workshop</h3>
@@ -365,8 +365,8 @@
 	</footer>
 
 	<script src="./js/bootstrap.bundle.min.js"></script>
-	<script src="./js/navbar.js"></script>
 	<script src="./js/parallax.js"></script>
+	<script src="./js/navbar.js"></script>
 </body>
 
 </html>

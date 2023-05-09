@@ -7,23 +7,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   function adjustParallaxTransform() {
     var scrollPosition = window.scrollY;
     var parallaxAmount = scrollPosition / 5;
+    
     backgroundImg.style.transform = "translate3d(0, calc(-50% + " + parallaxAmount + "px), 0)";
-
-    switch (true) {
-      case (windowWidth <= 320):
-        backgroundImg.style.transform = "translate3d(0, calc(-80% + " + (parallaxAmount- 500) + "px), 0)";
-        break;
-      case (windowWidth <= 576):
-        backgroundImg.style.transform = "translate3d(0, calc(-70% + " + (parallaxAmount - 300) + "px), 0)";
-        break;
-      case (windowWidth <= 768):
-        backgroundImg.style.transform = "translate3d(0, calc(-50% + " + (parallaxAmount - 300) + "px), 0)";
-        break;
-      default:
-        backgroundImg.style.transform = "translate3d(0, calc(-50% + " + parallaxAmount + "px), 0)";
-        break;
-    }
-
   }
 
   // add a scroll event listener to call the parallax function
