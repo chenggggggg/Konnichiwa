@@ -40,6 +40,11 @@
       src: url('../fonts/MPLUS1p-Thin.ttf') format('truetype');
   }
 
+  @font-face {
+      font-family: 'hakusyukaisyo';
+      src: url('../fonts/hakusyukaisyo.ttf') format('truetype');
+  }
+
   body {
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
@@ -153,27 +158,56 @@
       background-size: cover;
   }
 
+  .menu-price {
+    font-size: medium;
+  }
+
   .menu-item {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
       font-size: 18px;
+      line-height: 1;
+      min-width: 467px;
   }
 
-  .menu-item .dish-name {
-      min-width: 0;
+  .right-aligned-item {
+    padding-left: 50%;
   }
 
-  .menu-item .price {
+  .dish-name-tasting {
+      align-self: flex-start;
+      border-right: 1px solid #1C2331;
+      width: 137px !important;
       font-weight: bold;
   }
 
-  .menu-item .dots {
-      flex: 1;
-      border-bottom: 2px dotted #1C2331;
-      margin-left: 10px;
-      margin-right: 10px;
+  .dish-name-tasting ul {
+      height: 3em;
+  }
+  
+  .dish-name-omakase {
+    width: 160px !important;
+    font-weight: bold;
+    border-right: 1px solid #1C2331;
+  }
+
+  .dish-name-omakase ul {
+    height: 9em;
+
+  }
+
+  .dish-option{
+    width: 400px;
+  }
+
+  .option-line {
+      position: relative;
+      top: -7px;
+      width: 350px;
+  }
+
+  .dish-options {
+      border: 2px solid #1C2331;
+      border-radius: 25px;
   }
 
   .button {
@@ -232,6 +266,11 @@
       margin-right: 10px;
   }
 
+  .japanese-title {
+      font-family: 'hakusyukaisyo', sans-serif !important;
+      font-weight: bold;
+  }
+
   .japanese-text {
       margin: 0;
       font-size: 90%;
@@ -272,8 +311,9 @@
           height: 20vh;
           /* adjust height for smaller screens */
       }
-      .first-parallax img{
-        top: -100px;
+
+      .first-parallax img {
+          top: -100px;
       }
 
       .second-parallax {
