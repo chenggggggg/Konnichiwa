@@ -103,6 +103,11 @@
   }
 
   .menu-title {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       border-top: 1px solid #1C2331;
       border-bottom: 1px solid #1C2331;
       max-width: 300px;

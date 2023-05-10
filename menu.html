@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/menu-slides.css">
     <link rel="stylesheet" href="./css/navbar-default.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
@@ -32,18 +33,28 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container-fluid py-5 menu text-center" id="menu">
-            <h1 class="text-center">Menukaart</h1>
-            <div class="mx-auto my-3 text-center menu-title">
-                <h3>Teppanyaki</h3>
-                <h3 class="japanese-title">鉄板焼き</h3>
+    <div class="container-fluid py-5 menu" id="menu">
+        <h1 class="text-center">Menukaart</h1>
+        <div class="mx-auto my-3 text-center menu-title">
+            <div id="Arrows">
+                <i id="Prev" class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
             </div>
+            <h3 id="english-menu-title">Teppanyaki</h3>
+            <h3 class="japanese-title" id="japanese-menu-title">鉄板焼き</h3>
+            <div id="Arrows">
+                <i id="Next" class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <!--Teppanyaki menu section-->
+        <section class="menu-section teppanyaki-menu-wrapper active">
             <div class="row">
                 <div class="col-lg-5 mx-auto">
-                    <h5 class="fst-italic fw-bold">Teppanyaki menu (6 gangen incl. dessert)</h5>
-                    <h3 class="fw-bold">Tasting <span class="menu-price">€ 90 p.p.</span></h3>
-                    <h3 class="japanese-title pb-2">テイスティング</h3>
+                    <div class="text-center">
+                        <h5 class="fst-italic fw-bold">Teppanyaki menu (6 gangen incl. dessert)</h5>
+                        <h3 class="fw-bold">Tasting <span class="menu-price">€ 90 p.p.</span></h3>
+                        <h3 class="japanese-title pb-2">テイスティング</h3>
+                    </div>
                     <div class="menu-item pb-3">
                         <div class="dish-name-tasting">
                             <ul class="list-unstyled m-0">
@@ -147,9 +158,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5 mx-auto">
-                    <h5 class="fst-italic fw-bold">Teppanyaki menu</h5>
-                    <h3 class="fw-bold">Omakase</h3>
-                    <h3 class="japanese-title pb-2">おまかせ</h3>
+                    <div class="text-center">
+                        <h5 class="fst-italic fw-bold">Teppanyaki menu</h5>
+                        <h3 class="fw-bold">Omakase</h3>
+                        <h3 class="japanese-title pb-2">おまかせ</h3>
+                    </div>
                     <p>Kies het aantal gangen en uw voorkeur voor vlees, vis of combinatie.
                         De menu’s zijn exclusief dessert. Wenst u sushi, vraag dan naar onze sushikaart.
                     </p>
@@ -202,7 +215,83 @@
                     <p>Zijn er restricties, allergieën of vegan? Dan horen wij dit graag. </p>
                 </div>
             </div>
-    </section>
+        </section>
+
+        <!--Sushi menu section-->
+        <section class="menu-section sushi-menu-wrapper">
+            <div class="row">
+                <div class="col-lg-5 mx-auto">
+                    <h5 class="fw-bolder">Moriawase <span class="fw-light">Mix schotel</span></h5>
+                    <div class="menu-item pb-3">
+                        <div class="dish-name-tasting pe-2">
+                            <ul class="list-unstyled m-0">
+                                <li>Daily Moriawase</li>
+                                <li>Chef's plate</li>
+                                <li class="fw-normal float-end">€ 58</li>
+                            </ul>
+                        </div>
+                        <div class="dish-details ps-2">
+                            <ul class="list-unstyled m-0">
+                                <li>sashimi 12pc.</li>
+                                <li>aburi sushi 4pc.</li>
+                                <li>chef's special roll 16pc.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-item pb-3">
+                        <div class="dish-name-tasting pe-2">
+                            <ul class="list-unstyled m-0">
+                                <li>Sashimi mix</li>
+                                <li class="float-start"><small>195</small></li>
+                                <li class="fw-normal float-end">€ 22,60</li>
+                            </ul>
+                        </div>
+                        <div class="dish-details ps-2">
+                            <ul class="list-unstyled m-0">
+                                <li>5 kinds of fish</li>
+                                <li>5 soorten vis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-item pb-3">
+                        <div class="dish-name-tasting pe-2">
+                            <ul class="list-unstyled m-0">
+                                <li>Sashimi Zalm & Tonijn <small class="fw-light float-end">18pc.</small></li>
+                                <li class="float-start"><small>199</small></li>
+                                <li class="fw-normal float-end">€ 22</li>
+                            </ul>
+                        </div>
+                        <div class="dish-details ps-2">
+                            <ul class="list-unstyled m-0">
+                                <li>salmon</li>
+                                <li>tuna</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Otsumami menu section-->
+        <section class="menu-section otsumami-menu-wrapper">
+            ostumami menu
+        </section>
+
+        <!--Lunch menu section-->
+        <section class="menu-section lunch-menu-wrapper">
+            lunch menu
+        </section>
+
+        <!--Wijn menu section-->
+        <section class="menu-section wijn-menu-wrapper">
+            wijn menu
+        </section>
+
+        <!--Sake menu section-->
+        <section class="menu-section sake-menu-wrapper">
+            sake menu
+        </section>
+    </div>
 
     <footer class="footer">
         <div class="container py-5">
@@ -276,7 +365,9 @@
             </div>
         </div>
     </footer>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/menucard.js"></script>
 </body>
 
 </html>
