@@ -1,7 +1,13 @@
 const menuSections = document.querySelectorAll('.menu-section');
 const previousButton = document.querySelector('#Prev');
 const nextButton = document.querySelector('#Next');
-const menuTitles = [  { english: "Teppanyaki", japanese: "鉄板焼き" },  { english: "Sushi", japanese: "寿司" },  { english: "Otsumami", japanese: "おつまみ" },  { english: "Lunch", japanese: "ランチ" },  { english: "Wijn", japanese: "ワイン" },  { english: "Sake", japanese: "酒" }];
+const menuTitles = [
+  { english: "Teppanyaki", japanese: "鉄板焼き" },
+  { english: "Sushi", japanese: "寿司" },
+  { english: "Otsumami", japanese: "おつまみ" },
+  { english: "Lunch", japanese: "昼ご飯" },
+  { english: "Wijn", japanese: "オープンワイン" },
+  { english: "Sake", japanese: "日本酒" }];
 let currentSectionIndex = 0;
 let currentMenuIndex = 0;
 const englishMenuTitle = document.querySelector("#english-menu-title");
