@@ -46,9 +46,6 @@
   }
 
   body {
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
       font-family: 'MPLUS1p-Regular', Arial, sans-serif;
       background-color: #fcf8f4;
       font-size: 16px;
@@ -119,9 +116,7 @@
 
   .menu-item {
       display: flex;
-      font-size: 18px;
       line-height: 1;
-      min-width: 467px;
   }
 
   .right-aligned-item {

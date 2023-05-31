@@ -1,46 +1,122 @@
-#Arrows{
+#Arrows {
 	justify-content: space-between;
 	width: 400px;
 }
 
-#Prev, #Next {
-    color: #000;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+#Prev,
+#Next {
+	color: #000;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #Prev {
-    left: -50px;
+	left: -50px;
 }
 
 #Next {
-    right: -50px;
+	right: -50px;
 }
 
-#Arrows i{
+#Arrows i {
 	color: #1C2331;
 	cursor: pointer;
 	height: 30px;
 	transition: background-color .5s, color .5s;
 }
 
-#Arrows i:first-of-type{ 
+#Arrows i:first-of-type {
 	padding-right: 20px;
 }
 
-#Arrows i:last-of-type{ 
+#Arrows i:last-of-type {
 	padding-left: 20px;
 }
 
-#Arrows i:hover{
+#Arrows i:hover {
 	color: #b0c4de;
 }
 
 .menu-section {
 	display: none;
+
+	.row {
+		background-image: url('../images/wave-of-kanagawa.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
+
 
 .menu-section.active {
 	display: block;
+}
+
+.menu-section li {
+	font-size: 1em;
+}
+
+.menu-subtitle {
+	font-family: 'MPLUS1p-Black', Arial, sans-serif;
+	flex: 0 0 auto;
+	margin-right: 10px;
+}
+
+.menu-subtitle-description {
+	font-family: 'MPLUS1p-Medium', Arial, sans-serif;
+	font-size: smaller;
+	flex: 1 1 auto;
+}
+
+.page-2 {
+	.col {
+		max-width: 300px;
+	}
+}
+
+.otsumami {
+	max-width: 450px;
+}
+
+.lunch {
+	max-width: 600px;
+}
+
+.wine-type {
+	display: table-cell;
+	vertical-align: middle;
+	border: 2px solid #1C2331;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+}
+
+.sake-type {
+	display: table-cell;
+	vertical-align: middle;
+	border: 2px solid #1C2331;
+	border-radius: 50%;
+	width: 90px;
+	height: 90px;
+}
+
+.wine-description {
+	align-self: flex-start;
+	border-right: 1px solid #1C2331;
+	width: 200px !important;
+	font-weight: bold;
+}
+
+.wine-price {
+	width: 200px !important;
+}
+
+.wine-title {
+	font-family: 'MPLUS1p-Bold', Arial, sans-serif;
+}
+
+.sake-subtitle {
+	font-family: 'MPLUS1p-Regular', Arial, sans-serif;
+	font-size: small;
 }
