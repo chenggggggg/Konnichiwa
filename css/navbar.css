@@ -45,6 +45,10 @@ nav a:hover {
     color: #1C2331;
 }
 
+.nav-scrolled a:hover{
+    color: white;
+}
+
 .nav-scrolled img {
     height: 75px;
 }

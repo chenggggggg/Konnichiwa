@@ -120,3 +120,20 @@
 	font-family: 'MPLUS1p-Regular', Arial, sans-serif;
 	font-size: small;
 }
+
+.menu-page-divider {
+	height: 20vh; 
+	width: 100vw;
+	background-color: #1C2331;
+}
+
+.menu-page-divider {
+	height: 20vh; 
+	margin: 0 -15px;
+	overflow: hidden;
+  }
+  
+
+.menu.title.section {
+	background-image: none;
+}
