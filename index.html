@@ -7,62 +7,116 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+	<link rel="stylesheet" href="./css/gallery.css">
 	<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
 </head>
 
 <body>
-	<header>
-		<nav class="fixed-top justify-content-center">
-			<ul class="d-flex align-items-center">
-				<li>
-					<a href="#home">
-						<img src="./images/logo-white.png" alt="Logo" class="nav-logo">
-					</a>
-				</li>
-				<li><a href="#home" id="home-link">Home</a></li>
-				<li><a href="#overons">Over ons</a></li>
-				<li><a href="#menu">Menu</a></li>
-				<li><a href="#workshop">Workshop</a></li>
-				<li><a href="#">Cadeaubon</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Webshop</a></li>
-			</ul>
-		</nav>
-	</header>
-	<div class="mb-5 home section">
-		<iframe
-			src="https://www.youtube.com/embed/4XOSkRKLUBo?autoplay=1&loop=1&modestbranding=1&autohide=1&showinfo=0&mute=1&controls=0&playlist=4XOSkRKLUBo"
-			frameborder="0" allowfullscreen></iframe>
-	</div>
-	<div class="container mb-5 overons section">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h3>Restaurant Konnichiwa</h3>
-						<p>Ervaar de authentieke smaken van Japan bij Restaurant Konnichiwa in Utrecht</p>
-					</div>
-					<div class="col-md-12">
-						<p>
-							"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-							do eiusmod tempor incididunt ut labore et dolore magna aliqua
-							. Ut enim ad minim veniam, quis nostrud exercitation ullamco l
-							aboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-							dolor in reprehenderit in voluptate velit esse cillum dolore eu fu
-							giat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-							sunt in culpa qui officia deserunt mollit anim id est laborum."
-						</p>
-					</div>
-				</div>
+	<div id="mainNavigation">
+		<nav role="navigation">
+			<div class="py-3 text-center border-bottom">
+				<img src="./images/logo-white.png" alt="" class="invert" width="75px" height="75px">
 			</div>
-			<div class="col-md-4">
-				<img src="./images/konnichiwa-restaurant-inside.jpg" alt="Konnichiwa inside"
-					class="img-fluid rounded mb-3">
+		</nav>
+		<div class="navbar-expand-md">
+			<div class="navbar-dark text-center my-2">
+				<button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span> <span class="align-middle"></span>
+				</button>
+			</div>
+			<div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav mx-auto ">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Over ons</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">
+							Restaurant
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#">Bestellen</a></li>
+							<li><a class="dropdown-item" href="#">Reserveren</a></li>
+							<li><a class="dropdown-item" href="#">Workshops</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
+
+	<div class="container-fluid slideshow p-0">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./images/slideshow1.jpg" class="d-block" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="./images/slideshow2.jpg" class="d-block" alt="...">
+				</div>
+				<div class="carousel-item">
+					<img src="./images/slideshow3.jpg" class="d-block" alt="...">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+	</div>
+
+	<!--
+	<iframe
+		src="https://www.youtube.com/embed/4XOSkRKLUBo?autoplay=1&loop=1&modestbranding=1&autohide=1&showinfo=0&mute=1&controls=0&playlist=4XOSkRKLUBo"
+		frameborder="0" allowfullscreen></iframe>
+	-->
+
+	<section class="container text-center gallery-title">
+		<h6 class="section-subtitle">
+			WHAT WE MAKE
+		</h6>
+		<h1 class="section-title">
+			OUR HIGH QUALITY SUSHI
+		</h1>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="container-general">
+						<div class="gallery-wrap wrap-effect-1">
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
 	<div class="parallax-container first-parallax">
 		<img src="./images/konnichiwa-restaurant-inside-teppanyaki.jpg" alt="Konnichiwa teppanyaki" class="img-fluid">
 	</div>
@@ -364,11 +418,15 @@
 		</div>
 	</footer>
 
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./js/bootstrap.bundle.min.js"></script>
 	<script src="./js/iframe.js"></script>
 	<script src="./js/parallax.js"></script>
 	<script src="./js/scrolling.js"></script>
 	<script src="./js/navbar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+	<script src="./js/gallery.js"></script>
 </body>
 
 </html>
